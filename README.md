@@ -9,7 +9,7 @@ This repository contains an implementation of a CycleGAN model that performs unp
 As part of a deep learning exploration, this notebook implements a CycleGAN model to translate photo images into Studio Ghibli-style frames. The CycleGAN framework is ideal for tasks where paired datasets aren't available.
 
 We trained this model using:
-- TPU strategy (if available)
+- GPU strategy 
 - Custom data loading pipeline using `tf.data`
 - PatchGAN Discriminator and ResNet-based Generator
 - Losses: adversarial, cycle-consistency, identity
@@ -55,7 +55,7 @@ This was a collaborative group project combining our interest in deep learning w
 | Epochs           | 10                 |
 | Steps per Epoch  | 500                |
 | Batch Size       | 1 (default CycleGAN) |
-| Strategy         | TPU (if available) |
+| Strategy         | GPU P400 |
 
 Intermediate outputs (losses and images) are printed every 100 steps to monitor training progress.
 
